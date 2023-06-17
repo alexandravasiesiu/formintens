@@ -13,6 +13,8 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn run build
+      - name: Add CNAME
+        run: cp CNAME ./public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
