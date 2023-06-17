@@ -3,16 +3,14 @@ on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "stable"
-      - run: yarn install
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
       - name: Build
         run: yarn run build
       - name: Deploy
