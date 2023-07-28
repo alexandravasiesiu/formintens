@@ -1073,11 +1073,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-px {
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1120,10 +1115,6 @@ video {
 
 .text-xl {
   font-size: 1.25rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
 }
 
 .font-bold {
@@ -1297,6 +1288,11 @@ video {
   color: rgb(77 95 122 / var(--tw-text-opacity));
 }
 
+.hover\:text-coolGray-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(42 51 66 / var(--tw-text-opacity));
+}
+
 .hover\:text-yellow-500:hover {
   --tw-text-opacity: 1;
   color: rgb(245 158 11 / var(--tw-text-opacity));
@@ -1332,6 +1328,11 @@ video {
 .focus\:ring-green-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(42 209 103 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-yellow-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(245 158 11 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-opacity-50:focus {
