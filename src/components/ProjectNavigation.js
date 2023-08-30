@@ -1,218 +1,96 @@
 import { useNavigate } from 'react-router';
-import logo from '../assets/images/logo-jam.png';
+import logo from '../assets/images/formintens-logo.png';
 import { useState } from 'react';
+import background from '../assets/flex-ui-assets/elements/pattern-white.svg';
 
 export function ProjectNavigation() {
 	const navigate = useNavigate();
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	return (<>
-		<section>
-			<nav className='py-4 bg-white'>
-				<div className='container mx-auto'>
-					<div className='relative items-center justify-between flex px-4'>
-						<div className='w-auto'>
-							<a className='inline-block'  onClick={() => { navigate('/') }}>
-								<img
-									src={logo}
-									alt=''
-									className='h-20'
-								/>
+		<section 
+		class="relative" 
+		style={{
+			backgroundImage: `url(${background})`, 
+			backgroundPosition: "center"}}>
+           <div class="container mx-auto">
+                <nav class="container mx-auto inline-flex p-4">
+			        <div class="flex w-full items-center container">
+                        <div class="xl:w-1/3 w-full">
+                            <a class="block max-w-max" onClick={() => { navigate('/') }}>
+                                <img class="md:h-20" src={logo} alt="" />
 							</a>
-						</div>
-						<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:block'>
-							<ul className='flex gap-5 items-center'>
-								<li className='font-heading text-gray-900 w-28'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectslanding') }}>
-										Prima pagină
-									</a>
-								</li>
-								<li className='font-heading text-gray-900'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectsacquisitions') }}>
-										Achiziții
-									</a>
-								</li>
-								<li className='font-heading text-gray-900'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectsbusiness') }}>
-										Afaceri
-									</a>
-								</li>
-								<li className='font-heading text-gray-900'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectsabout') }}>
-										Despre
-									</a>
-								</li>
-								<li className='font-heading text-gray-900'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectsevaluation') }}>
-										Evaluare
-									</a>
-								</li>
-								<li className='font-heading text-gray-900'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectsprogress') }}>
-										Progres
-									</a>
-								</li>
-								<li className='font-heading text-gray-900'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectsdocuments') }}>
-										Documente
-									</a>
-								</li>
-								<li className='font-heading text-gray-900'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectsmedia') }}>
-										Media
-									</a>
-								</li>
-								<li className='font-heading text-gray-900'>
-									<a className='hover:text-black' onClick={() => { navigate('/projectscontact') }}>
-										Contact
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className='w-auto lg:hidden'>
-							<a
-								className='navbar-burger inline-flex w-14 h-14 justify-center items-center bg-gray-50 hover:bg-gray-100 rounded-full'
-								href='#'
-								onClick={()=>setMenuOpen(true)}
-							>
-								<svg
-									width={20}
-									height={10}
-									viewBox='0 0 20 10'
-									fill='none'
-									xmlns='http://www.w3.org/2000/svg'
-								>
-									<path
-										d='M19 9H1M19 1H1'
-										stroke='black'
-										strokeWidth='1.5'
-										strokeLinecap='round'
-										strokeLinejoin='round'
-									/>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<div className={`${menuOpen?'':'hidden'} navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50`}>
-				<div className='fixed inset-0 backdrop-blur-xl backdrop-filter bg-gray-900 bg-opacity-80' />
-				<nav className='relative pt-7 pb-8 bg-white h-full overflow-y-auto'>
-					<div className='flex flex-col px-6 h-full'>
-					<div className='flex justify-between'>
-						<a className='inline-block ml-4 mb-7' onClick={() => { navigate('/') }}>
-							<img
-								src={logo}
-								alt=''
-								className='h-20'
-							/>
-						</a>
-						<a className='inline-block ml-4 mb-7' onClick={()=>setMenuOpen(false)}>
-							<svg 
-							xmlns="http://www.w3.org/2000/svg" 
-							fill="none" 
-							viewBox="0 0 24 24" 
-							stroke-width="1.5" 
-							stroke="currentColor" 
-							class="w-6 h-6">
-
-                            <path 
-							stroke-linecap="round" 
-							stroke-linejoin="round" 
-							d="M6 18L18 6M6 6l12 12" />
-                            </svg>
+                        </div>
+                        <div class="w-1/2 xl:w-1/3">
+                            <ul class="hidden xl:flex xl:justify-center gap-5">
+							    <li><a class="text-coolGray-500 font-medium hover:text-yellow-500 w-28 flex" onClick={() => ( navigate('/projectslanding') )}>Prima pagină</a></li>
+							    <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsacquisitions') )}>Achiziții</a></li>
+                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsbusiness') )}>Afaceri</a></li>
+                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsabout') )}>Despre</a></li>
+                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsevaluation') )}>Evaluare</a></li>
+                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsprogress') )}>Progres</a></li> 
+                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsdocuments') )}>Documente</a></li>
+								<li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsmedia') )}>Media</a></li>
+                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectscontact')) }>Contact</a></li>
+                            </ul>
+			            </div>
+                    </div>
+                    <button class="navbar-burger self-center xl:hidden">
+                        <a  className='navbar-burger inline-flex w-14 h-14 justify-center items-center bg-gray-50 hover:bg-gray-100 rounded-full'
+							href='#'
+							onClick={()=>setMenuOpen(true)}>
+                            <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							    <rect class="text-white" width="32" height="32" rx="6" fill="#F59E0B"></rect>
+							    <path class="text-coolGray-900" d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z" fill="currentColor"></path>
+						    </svg>
                         </a>
-						</div>
-						<ul className='w-full mb-auto pb-16'>
-							<li>
-								<a
-									className='font-heading block text-base font-medium py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/') }}
-								>
-									Acasă
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectslanding') }}
-								>
-									Prima pagină
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsacquisitions') }}
-								>
-									Achiziții
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsbusiness') }}
-								>
-									Afaceri
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsabout') }}
-								>
-									Despre
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsevaluation') }}
-								>
-									Evaluare
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsprogress') }}
-								>
-									Progres
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsdocuments') }}
-								>
-									Documente
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsmedia') }}
-								>
-									Media
-								</a>
-							</li>
-							<li>
-								<a
-									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectscontact') }}
-								>
-									Contact
-								</a>
-							</li>
-						</ul>
-						<div className='w-full'>
-							<p className='pl-2 font-heading'>2023 © Jam Business</p>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</section>
-		<h2 className='mb-6 text-3xl lg:text-5xl md:text-4xl py-10 text-center font-heading lg:px-40 px-10'>
+					</button>
+                </nav>
+		        <div class={`${menuOpen?'':'hidden'} navbar-menu fixed top-0 left-0 z-50 w-full h-full bg-coolGray-900 bg-opacity-50`}>
+                    <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-white">
+                        <nav class="relative p-6 h-full overflow-y-auto">
+							<div class="flex flex-col justify-between h-full">
+                                <div class="flex justify-between">
+                                    <a class="inline-block" onClick={() => { navigate('/') }}>
+                                        <img class="h-20" src={logo} alt="" />
+								    </a>
+                                    <a className='inline-block ml-4 mb-7 flex items-center' onClick={()=>setMenuOpen(false)}>
+							            <svg 
+							            xmlns="http://www.w3.org/2000/svg" 
+							            fill="none" 
+							            viewBox="0 0 24 24" 
+							            stroke-width="1.5" 
+							            stroke="currentColor" 
+							            class="w-6 h-6">
+            
+                                        <path 
+							            stroke-linecap="round" 
+							            stroke-linejoin="round" 
+							            d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <ul class="py-6">
+								    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectslanding')) }>Prima pagină</a></li>
+                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsacquisitions')) }>Achiziții</a></li>
+                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsbusiness')) }>Afaceri</a></li>
+                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsabout')) }>Despre</a></li>
+                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsevaluation')) }>Evaluare</a></li>
+                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsprogress')) }>Progres</a></li>
+                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsdocuments')) }>Documente</a></li>
+									<li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsmedia')) }>Media</a></li>
+                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectscontact')) }>Contact</a></li>
+                                </ul> 
+                                <div className='w-full'>
+							        <p className='text-md text-coolGray-400 font-medium px-4'>2023 © Formintens Centru</p>
+						        </div>
+			                </div>
+                        </nav>
+                    </div>
+                </div> 
+           </div>
+        </section>
+		<h2 className='mb-6 text-3xl leading-tight font-bold tracking-tight lg:text-5xl md:text-4xl text-center md:px-52 md:py-10 p-5'>
 			Creșterea ocupării, precum și îmbunătățirea nivelului de competențe al
 			tinerilor NEETs
 		</h2>

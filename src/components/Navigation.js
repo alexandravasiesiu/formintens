@@ -1,8 +1,10 @@
 import { useNavigate } from 'react-router';
 import { useState } from 'react';
+import logo from '../assets/images/formintens-logo.png';
 import circle3Yellow from "../assets/flex-ui-assets/elements/circle3-yellow.svg";
 import dots3Blue from '../assets/flex-ui-assets/elements/dots3-blue.svg';
 import teacherImg from '../assets/images/young-confident-college-teacher-or-lecturer-explai-2022-08-10-22-37-48-utc.jpg';
+import background from '../assets/flex-ui-assets/elements/pattern-white.svg';
 
 export function Navigation() {
 	const navigate = useNavigate();
@@ -11,15 +13,15 @@ export function Navigation() {
 	return (
 		<section class="relative bg-white overflow-hidden"
 			style={{
-				backgroundImage: "url('flex-ui-assets/elements/pattern-white.svg')",
+				backgroundImage: `url(${background})`,
 				backgroundPosition: "center"
 			}}
 		>
 			<div class="container mx-auto p-4">
 				<nav class="container mx-auto inline-flex"><div class="flex w-full items-center container">
 					<div class="xl:w-1/3 w-full">
-						<a class="block max-w-max" href="index.html">
-							<img class="h-20" src="images/formintens-logo.png" alt="" /></a>
+						<a class="block max-w-max" onClick={() => {navigate('/')}}>
+							<img class="h-20" src={logo} alt="" /></a>
 					</div>
 				</div>
 				</nav>
