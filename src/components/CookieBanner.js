@@ -60,7 +60,7 @@ function CookieBanner() {
               type="button"
               onClick={declineCookies}
             >
-              Decline
+              Refuz
             </button>
           </div>
         </>
