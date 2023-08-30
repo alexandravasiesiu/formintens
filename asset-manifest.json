@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/static/js/main.93495d0e.js",
+    "static/media/team.png": "/static/media/team.b542e1e0ecafdcae4c22.png",
+    "static/media/poster-formintens.png": "/static/media/poster-formintens.dd38135b5688216e5f89.png",
+    "static/media/young-confident-college-teacher-or-lecturer-explai-2022-08-10-22-37-48-utc.jpg": "/static/media/young-confident-college-teacher-or-lecturer-explai-2022-08-10-22-37-48-utc.94c757dbe6c63e209f7d.jpg",
+    "static/media/formintens-logo.png": "/static/media/formintens-logo.53da1032dbeb9cdf0d8b.png",
+    "static/media/ss-transparent.png": "/static/media/ss-transparent.010284dbf261cf49593a.png",
+    "static/media/students-studying-together-in-college-2022-08-24-23-06-32-utc.jpg": "/static/media/students-studying-together-in-college-2022-08-24-23-06-32-utc.d64aafec58200367fc5c.jpg",
+    "static/media/dots3-blue.svg": "/static/media/dots3-blue.8031027712792f82e178ed8dff768112.svg",
+    "static/media/pattern-white.svg": "/static/media/pattern-white.33109a7c0e536b112366a932f9d7a478.svg",
+    "static/media/circle3-yellow.svg": "/static/media/circle3-yellow.f5d466c1f22bd2385d727a7804593dbd.svg",
+    "index.html": "/index.html",
+    "main.93495d0e.js.map": "/static/js/main.93495d0e.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.93495d0e.js"
+  ]
+}
