@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import logo from '../assets/images/formintens-logo.png';
 import circle3Yellow from "../assets/flex-ui-assets/elements/circle3-yellow.svg";
@@ -20,8 +20,8 @@ export function Navigation() {
 			<div class="container mx-auto p-4">
 				<nav class="container mx-auto inline-flex"><div class="flex w-full items-center container">
 					<div class="xl:w-1/3 w-full">
-						<a class="block max-w-max" onClick={() => {navigate('/')}}>
-							<img class="h-20" src={logo} alt="" /></a>
+						<Link class="block max-w-max" to='/'>
+							<img class="h-20" src={logo} alt="" /></Link>
 					</div>
 				</div>
 				</nav>
@@ -33,7 +33,8 @@ export function Navigation() {
 							<h1 class="mb-6 text-3xl leading-tight font-bold tracking-tight lg:text-5xl md:text-4xl">Descoperă noi orizonturi profesionale cu Formintens!</h1>
 							<p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">Oferim cursuri de formare adaptate nevoilor tale, pentru a-ți dezvolta abilitățile și a-ți construi o carieră de succes. Contactează-ne acum și explorează potențialul tău la Formintens!</p>
 							<div class="flex flex-wrap">
-								<div class="w-full md:w-auto py-1 md:py-0"><a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border rounded-md shadow-sm border-yellow-600" href="#contact_section" contenteditable="false">Contact</a></div>
+								<div class="w-full md:w-auto py-1 md:py-0">
+									<a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border rounded-md shadow-sm border-yellow-600" href="#contact_section" contenteditable="false">Contact</a></div>
 							</div>
 						</div>
 						<div class="w-full md:w-1/2 px-4">

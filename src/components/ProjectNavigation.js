@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/images/formintens-logo.png';
 import { useState } from 'react';
 import background from '../assets/flex-ui-assets/elements/pattern-white.svg';
@@ -17,21 +17,21 @@ export function ProjectNavigation() {
                 <nav class="container mx-auto inline-flex p-4">
 			        <div class="flex w-full items-center container">
                         <div class="xl:w-1/3 w-full">
-                            <a class="block max-w-max" onClick={() => { navigate('/') }}>
+                            <Link class="block max-w-max" to='/'>
                                 <img class="md:h-20" src={logo} alt="" />
-							</a>
+							</Link>
                         </div>
                         <div class="w-1/2 xl:w-1/3">
                             <ul class="hidden xl:flex xl:justify-center gap-5">
-							    <li><a class="text-coolGray-500 font-medium hover:text-yellow-500 w-28 flex" onClick={() => ( navigate('/projectslanding') )}>Prima pagină</a></li>
-							    <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsacquisitions') )}>Achiziții</a></li>
-                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsbusiness') )}>Afaceri</a></li>
-                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsabout') )}>Despre</a></li>
-                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsevaluation') )}>Evaluare</a></li>
-                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsprogress') )}>Progres</a></li> 
-                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsdocuments') )}>Documente</a></li>
-								<li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectsmedia') )}>Media</a></li>
-                                <li><a class="text-coolGray-500 font-medium hover:text-yellow-500" onClick={() => ( navigate('/projectscontact')) }>Contact</a></li>
+							    <li><Link class="text-coolGray-500 font-medium hover:text-yellow-500 w-28 flex" to='/projectslanding'>Prima pagină</Link></li>
+							    <li><Link class="text-coolGray-500 font-medium hover:text-yellow-500" to='/projectsacquisitions'>Achiziții</Link></li>
+                                <li><Link class="text-coolGray-500 font-medium hover:text-yellow-500" to='/projectsbusiness'>Afaceri</Link></li>
+                                <li><Link class="text-coolGray-500 font-medium hover:text-yellow-500" to='/projectsabout'>Despre</Link></li>
+                                <li><Link class="text-coolGray-500 font-medium hover:text-yellow-500" to='/projectsevaluation'>Evaluare</Link></li>
+                                <li><Link class="text-coolGray-500 font-medium hover:text-yellow-500" to='/projectsprogress'>Progres</Link></li> 
+                                <li><Link class="text-coolGray-500 font-medium hover:text-yellow-500" to='/projectsdocuments'>Documente</Link></li>
+								<li><Link class="text-coolGray-500 font-medium hover:text-yellow-500" to='/projectsmedia'>Media</Link></li>
+                                <li><Link class="text-coolGray-500 font-medium hover:text-yellow-500" to='/projectscontact'>Contact</Link></li>
                             </ul>
 			            </div>
                     </div>
@@ -51,9 +51,9 @@ export function ProjectNavigation() {
                         <nav class="relative p-6 h-full overflow-y-auto">
 							<div class="flex flex-col justify-between h-full">
                                 <div class="flex justify-between">
-                                    <a class="inline-block" onClick={() => { navigate('/') }}>
+                                    <Link class="inline-block" to='/'>
                                         <img class="h-20" src={logo} alt="" />
-								    </a>
+								    </Link>
                                     <a className='inline-block ml-4 mb-7 flex items-center' onClick={()=>setMenuOpen(false)}>
 							            <svg 
 							            xmlns="http://www.w3.org/2000/svg" 
@@ -71,15 +71,15 @@ export function ProjectNavigation() {
                                     </a>
                                 </div>
                                 <ul class="py-6">
-								    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectslanding')) }>Prima pagină</a></li>
-                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsacquisitions')) }>Achiziții</a></li>
-                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsbusiness')) }>Afaceri</a></li>
-                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsabout')) }>Despre</a></li>
-                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsevaluation')) }>Evaluare</a></li>
-                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsprogress')) }>Progres</a></li>
-                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsdocuments')) }>Documente</a></li>
-									<li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectsmedia')) }>Media</a></li>
-                                    <li><a class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" onClick={() => ( navigate('/projectscontact')) }>Contact</a></li>
+								    <li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectslanding'>Prima pagină</Link></li>
+                                    <li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectsacquisitions'>Achiziții</Link></li>
+                                    <li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectsbusiness'>Afaceri</Link></li>
+                                    <li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectsabout'>Despre</Link></li>
+                                    <li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectsevaluation'>Evaluare</Link></li>
+                                    <li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectsprogress'>Progres</Link></li>
+                                    <li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectsdocuments'>Documente</Link></li>
+									<li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectsmedia'>Media</Link></li>
+                                    <li><Link class="block py-3 px-4 text-coolGray-500 hover:text-yellow-500 font-medium hover:bg-coolGray-50 rounded-md" to='/projectscontact'>Contact</Link></li>
                                 </ul> 
                                 <div className='w-full'>
 							        <p className='text-md text-coolGray-400 font-medium px-4'>2023 © Formintens Centru</p>

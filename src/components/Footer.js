@@ -1,5 +1,5 @@
 import logo from '../assets/images/formintens-logo.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import background from '../assets/flex-ui-assets/elements/pattern-white.svg';
 
 export function Footer(){
@@ -15,7 +15,7 @@ export function Footer(){
 			}}>
 		<div class="container px-4 mx-auto">
         <div class="pb-5 mx-auto max-w-4xl pt-5">
-          <a class="block md:mx-auto mb-5 max-w-max" onClick={() => {navigate('/')}}>
+          <Link class="block md:mx-auto mb-5 max-w-max" to='/'>
             <img src={logo} alt="" class="h-20" />
 			<path 
 			class="text-coolGray-900" 
@@ -48,7 +48,7 @@ export function Footer(){
 			d="M4.45002 18.9197C8.0996 17.4169 12.1786 17.2881 15.914 18.6191C19.3489 19.8213 22.9985 20.036 26.4334 19.2631C26.3905 17.331 26.6481 15.4418 27.3351 13.5526C22.8267 14.8836 17.9749 14.7548 13.4666 13.1662C10.8905 12.2216 8.05667 12.2216 5.48049 13.0803C5.52343 14.9266 5.17995 16.8158 4.5359 18.662C4.5359 18.662 4.49296 18.7909 4.45002 18.9197Z" 
 			fill="currentColor">
 			</path>
-			</a>
+			</Link>
         </div>
         </div>
         <div class="border-b border-coolGray-100"></div>

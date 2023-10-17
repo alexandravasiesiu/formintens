@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 
 function CookieBanner() {
   const [showBanner, setShowBanner] = useState(true);
@@ -26,9 +26,9 @@ function CookieBanner() {
               optimă a platformei și pentru a analiza modul în care
               interacționați cu conținutul nostru.
             </p>
-            <a
+            <Link
               class="text-lg flex items-center font-medium text-coolGray-500 hover:text-yellow-500 mb-2"
-              onClick={() => ( navigate('/projectspolicy') )}
+              to='/projectspolicy'
             >
               <span class="mr-2">
                 Citiți politica noastră de confidențialitate
@@ -45,7 +45,7 @@ function CookieBanner() {
                   fill="currentColor"
                 ></path>
               </svg>
-            </a>
+            </Link>
           </div>
           <div class="xl:w-1/3 w-full flex items-center font-medium xl:justify-end justify-start gap-5">
             <button
