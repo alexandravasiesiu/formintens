@@ -34,7 +34,7 @@ export function Navigation() {
 							<p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">Oferim cursuri de formare adaptate nevoilor tale, pentru a-ți dezvolta abilitățile și a-ți construi o carieră de succes. Contactează-ne acum și explorează potențialul tău la Formintens!</p>
 							<div class="flex flex-wrap">
 								<div class="w-full md:w-auto py-1 md:py-0">
-									<a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border rounded-md shadow-sm border-yellow-600" href="#contact_section" contenteditable="false">Contact</a></div>
+									<Link class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border rounded-md shadow-sm border-yellow-600" to="#contact_section">Contact</Link></div>
 							</div>
 						</div>
 						<div class="w-full md:w-1/2 px-4">

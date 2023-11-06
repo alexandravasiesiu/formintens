@@ -177,6 +177,7 @@ export default function Index() {
             </div>
       </section>
 
+       
       <section 
       id="contact_section" 
       class="py-20 bg-white" 
