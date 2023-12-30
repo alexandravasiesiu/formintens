@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.421a636a.js",
+    "main.js": "/static/js/main.ec963a70.js",
     "static/media/team.png": "/static/media/team.b542e1e0ecafdcae4c22.png",
     "static/media/poster-formintens.png": "/static/media/poster-formintens.dd38135b5688216e5f89.png",
     "static/media/young-confident-college-teacher-or-lecturer-explai-2022-08-10-22-37-48-utc.jpg": "/static/media/young-confident-college-teacher-or-lecturer-explai-2022-08-10-22-37-48-utc.94c757dbe6c63e209f7d.jpg",
@@ -11,9 +11,9 @@
     "static/media/pattern-white.svg": "/static/media/pattern-white.33109a7c0e536b112366a932f9d7a478.svg",
     "static/media/circle3-yellow.svg": "/static/media/circle3-yellow.f5d466c1f22bd2385d727a7804593dbd.svg",
     "index.html": "/index.html",
-    "main.421a636a.js.map": "/static/js/main.421a636a.js.map"
+    "main.ec963a70.js.map": "/static/js/main.ec963a70.js.map"
   },
   "entrypoints": [
-    "static/js/main.421a636a.js"
+    "static/js/main.ec963a70.js"
   ]
 }
