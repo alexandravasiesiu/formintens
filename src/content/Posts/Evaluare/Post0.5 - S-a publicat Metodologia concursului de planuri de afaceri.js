@@ -3,7 +3,7 @@ export const options = {
 	"title": "S-a publicat Metodologia concursului de planuri de afaceri",
 	"category": "EVALUARE",
 	"category_link": "/projectsevaluation",
-	"id": 24
+	"id": 24,
 }
 
 export default function Post(){

@@ -2,7 +2,7 @@ export const options = {
 	"title": "Comunicat de presă lansare proiect",
 	"category": "MEDIA",
 	"category_link": "/projectsmedia",
-	"id": 6
+	"id": 6,
 }
 
 export default function Post(){

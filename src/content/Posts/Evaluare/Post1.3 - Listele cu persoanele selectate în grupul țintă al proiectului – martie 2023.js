@@ -3,7 +3,7 @@ export const options = {
 	"title": "Listele cu persoanele selectate în grupul țintă al proiectului – martie 2023",
 	"category": "EVALUARE",
 	"category_link": "/projectsevaluation",
-	"id": 47
+	"id": 47,
 }
 
 export default function Post(){

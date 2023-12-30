@@ -11,7 +11,7 @@ export default function Post(){
 	<>
 	<div class="accordion-content mt-4">
                   <p class="mb-3 w-full md:text-lg">Cu bucurie vă anunțăm că mai bine de jumătate din grupul țintă a fost recrutat, așadar, dacă doriți să beneficiați de oportunitățile oferite prin proiect, ar fi bine să vă grăbiți. Calificările pentru care mai sunt locuri sunt următoarele:</p>
-                  <ol class="list-decimal list-inside md:px-5 mb-4 text-base md:text-lg text-coolGray-500"><li class="mb-3 w-full md:text-lg list-disc">Lucrător în structuri pentru construcții</li>
+                  <ol class="list-decimal list-inside md:px-5 mb-4 text-base md:text-lg"><li class="mb-3 w-full md:text-lg list-disc">Lucrător în structuri pentru construcții</li>
                     <li class="mb-3 w-full md:text-lg list-disc">Pavator</li>
                     <li class="mb-3 w-full md:text-lg list-disc">Lucrător comercial</li>
                   </ol><p class="mb-3 w-full md:text-lg">De asemenea, vă mai puteți înscrie la cursul de specializare în domeniul gestiunii deșeurilor.</p>

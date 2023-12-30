@@ -11,7 +11,7 @@ export default function Post(){
 	<>
 	<div class="accordion-content mt-4">
                   <p class="mb-3 w-full md:text-lg">Continuă recrutările pentru grupul țintă al proiectului Creșterea ocupării, precum și îmbunătățirea nivelului de competențe al tinerilor NEETs. În cadrul proiectului, participanții pot obține una dintre următoarele calificări:</p>
-                  <ol class="list-decimal list-inside md:px-5 mb-4 text-base md:text-lg text-coolGray-500">
+                  <ol class="list-decimal list-inside md:px-5 mb-4 text-base md:text-lg">
                     <li class="mb-3 w-full md:text-lg list-disc">Pavator</li>
                     <li class="mb-3 w-full md:text-lg list-disc">Lucrător comercial</li>
                   </ol>

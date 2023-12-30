@@ -13,7 +13,7 @@ export default function Post(){
                   <p class="mb-3 w-full md:text-lg">Oana Forest SRL oferă servicii de prelucrare a lemnului în Cugir, județul Alba. Localitatea nu este aleasă întâmplător, aceasta remarcându-se printr-o tradiție de lungă durată în prelucrarea lemnului, atât la nivel industrial cât și artizanal, dar și printr-o disponibilitate de materie primă, respectiv lemn pentru realizarea produselor.</p>
                   <p class="mb-3 w-full md:text-lg">Din punct de vedere economic și turistic, orașul Cugir oferă produse și servicii de prelucrare a lemnului la nivel primar, dar și specializat.</p>
                   <p class="mb-3 w-full md:text-lg">Oana Forest SRL reprezintă o baza de producție pentru fabricarea produselor din lemn destinate utilării construcțiilor și amenajării locuințelor:</p>
-                  <ol class="list-decimal list-inside md:px-5 mb-4 text-base md:text-lg text-coolGray-500">
+                  <ol class="list-decimal list-inside md:px-5 mb-4 text-base md:text-lg">
                     <li class="mb-3 w-full md:text-lg list-disc">grinzi, căpriori, suporturi pentru acoperiș</li>
                     <li class="mb-3 w-full md:text-lg list-disc">grinzi cu zăbrele prefabricate din lemn, impregnate cu clei și având adaosuri metalice</li>
                     <li class="mb-3 w-full md:text-lg list-disc">uși, ferestre, obloane și cadrele lor, cu sau fără accesorii metalice ca: balamale, zăvoare etc.</li>

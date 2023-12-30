@@ -39,7 +39,6 @@ export default function ProjectFooter() {
 			        </div>
 					<button class="navbar-burger self-center xl:hidden px-10 mb-5 mx-auto max-w-4xl flex justify-center border bg-yellow-500 rounded-md">
 						<a className='navbar-burger inline-flex justify-center items-center bg-gray-50 hover:bg-gray-100 rounded-full'
-							href='#'
 							onClick={()=>setMenuOpen(true)}>
                             <svg width="30" height="30" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 						    	<rect class="text-white" width="32" height="32" rx="6" fill="#F59E0B"></rect>

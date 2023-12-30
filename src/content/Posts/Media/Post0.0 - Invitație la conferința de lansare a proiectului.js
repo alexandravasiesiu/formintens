@@ -2,7 +2,7 @@ export const options = {
 	"title": "Invitație la conferința de lansare a proiectului",
 	"category": "MEDIA",
 	"category_link": "/projectsmedia",
-	"id": 5
+	"id": 5,
 }
 
 export default function Post(){

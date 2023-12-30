@@ -19,7 +19,7 @@ export default function Post() {
         <p class="mb-3 w-full md:text-lg">
           Laboratorul desfășoară următoarele activități:
         </p>
-        <ol class="list-decimal list-inside md:px-5 mb-4 text-base md:text-lg text-coolGray-500">
+        <ol class="list-decimal list-inside md:px-5 mb-4 text-base md:text-lg">
           <li class="mb-3 w-full md:text-lg list-disc">
             fabricarea pișcoturilor, biscuiților și a altor produse de brutărie
             “uscate”

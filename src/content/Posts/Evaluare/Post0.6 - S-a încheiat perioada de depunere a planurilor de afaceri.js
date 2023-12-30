@@ -3,7 +3,7 @@ export const options = {
 	"title": "S-a încheiat perioada de depunere a planurilor de afaceri!",
 	"category": "EVALUARE",
 	"category_link": "/projectsevaluation",
-	"id": 26
+	"id": 26,
 }
 
 export default function Post(){

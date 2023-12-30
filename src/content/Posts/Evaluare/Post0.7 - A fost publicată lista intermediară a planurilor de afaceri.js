@@ -3,7 +3,7 @@ export const options = {
 	"title": "A fost publicată lista intermediară a planurilor de afaceri",
 	"category": "EVALUARE",
 	"category_link": "/projectsevaluation",
-	"id": 27
+	"id": 27,
 }
 
 export default function Post(){

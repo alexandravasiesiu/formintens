@@ -37,7 +37,6 @@ export function ProjectNavigation() {
                     </div>
                     <button class="navbar-burger self-center xl:hidden">
                         <a  className='navbar-burger inline-flex w-14 h-14 justify-center items-center bg-gray-50 hover:bg-gray-100 rounded-full'
-							href='#'
 							onClick={()=>setMenuOpen(true)}>
                             <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 							    <rect class="text-white" width="32" height="32" rx="6" fill="#F59E0B"></rect>

@@ -3,7 +3,7 @@ export const options = {
 	"title": "Rezultate finale competiție planuri de afaceri",
 	"category": "EVALUARE",
 	"category_link": "/projectsevaluation",
-	"id": 28
+	"id": 28,
 }
 
 export default function Post(){
